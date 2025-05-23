@@ -20,7 +20,7 @@ backend.use(express.json());
 backend.use(express.urlencoded({ extended: true }));
 // Enable CORS for all origins and common HTTP methods
 backend.use(cors({
-  origin: "*", // Allow requests from any domain (not recommended for production)
+  origin: "mentorverse-fd-hwo8.vercel.app", // Allow requests from any domain (not recommended for production)
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE"], // Allowed HTTP methods
 }));
 

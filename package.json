@@ -10,7 +10,7 @@
   "license": "ISC",
   "author": "suneha",
   "type": "commonjs",
-  "main": "server.js",
+  "start": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"

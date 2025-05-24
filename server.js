@@ -5,7 +5,6 @@ require("./models/mentorProfileSchema");
 require("./models/Request");
 require('dotenv').config(); // Load environment variables from a .env file
 const path = require('path')
-
 const mongoose = require("mongoose"); // ODM for MongoDB
 const chalk = require("chalk"); // For colorful console messages
 const routes = require("./routes"); // Importing custom defined routes
@@ -20,7 +19,7 @@ backend.use(express.json());
 backend.use(express.urlencoded({ extended: true }));
 // Enable CORS for all origins and common HTTP methods
 backend.use(cors({
-  origin: "mentorverse-fd-hwo8.vercel.app", // Allow requests from any domain (not recommended for production)
+  origin: "https://mentorverse-fd-hwo8.vercel.app",  // Allow requests from any domain (not recommended for production)
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE"], // Allowed HTTP methods
 }));
 

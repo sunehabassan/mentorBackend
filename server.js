@@ -39,7 +39,7 @@ backend.use(cors({
 // Use imported routes
 backend.use(routes);
 
-// Connect to MongoDB using Mongoose
+// Connect to MongoDB using 
 mongoose.connect(process.env.DBURL)
   .then(() => {
     console.log(`${chalk.green("✓")} ${chalk.blue("MongoDB Connected!")}`);
